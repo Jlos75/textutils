@@ -1,21 +1,19 @@
+from ._caesar import _shift_text
+
+
 def encrypt(text, key):
     """Encrypt text using a Caesar cipher.
 
-    Args:
-        text (str): The text to encrypt.
-        key (int): Number of positions used to shift alphabetic characters.
+    Parameters
+    ----------
+    text : str
+        Text to encrypt. Non-English letters are left unchanged.
+    key : int
+        Number of positions to shift English letters. Negative keys are valid.
 
-    Returns:
-        str: The encrypted text.
+    Returns
+    -------
+    str
+        The encrypted text.
     """
-    result = ""
-
-    for char in text:
-        if "a" <= char <= "z":
-            result += chr((ord(char) - ord("a") + key) % 26 + ord("a"))
-        elif "A" <= char <= "Z":
-            result += chr((ord(char) - ord("A") + key) % 26 + ord("A"))
-        else:
-            result += char
-
-    return result
+    return _shift_text(text, key)

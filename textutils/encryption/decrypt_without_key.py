@@ -7,12 +7,15 @@ def decrypt_without_key(text):
     The Caesar cipher has only 26 possible shifts, so every possible key
     can be tested.
 
-    Args:
-        text (str): The encrypted text.
+    Parameters
+    ----------
+    text : str
+        Text to decrypt with each possible key.
 
-    Returns:
-        dict[int, str]: A mapping containing each possible key and its
-        corresponding decrypted text.
+    Returns
+    -------
+    dict[int, str]
+        Mapping from each key in the range 0 to 25 to its decrypted text.
     """
     results = {}
 
