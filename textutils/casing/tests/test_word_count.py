@@ -13,3 +13,6 @@ def test_word_count_empty_or_whitespace_only():
 def test_word_count_multiple_whitespace_separators():
     assert word_count("hello   world\tagain") == 3
 
+
+def test_word_count_false():
+    assert word_count("hello world") == 0
