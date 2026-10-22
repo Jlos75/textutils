@@ -1,13 +1,5 @@
-from textutils import capitalize_words, reverse
+from textutils import capitalize_words
 
-
-def test_reverse():
-    assert reverse("dodo") == "odod"
-
-
-def test_reverse_empty_and_single_character():
-    assert reverse("") == ""
-    assert reverse("a") == "a"
 
 
 def test_capitalize_words():

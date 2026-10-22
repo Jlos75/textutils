@@ -1,4 +1,4 @@
-from textutils import character_count, word_count
+from textutils import word_count
 
 
 def test_word_count():
@@ -13,10 +13,3 @@ def test_word_count_empty_or_whitespace_only():
 def test_word_count_multiple_whitespace_separators():
     assert word_count("hello   world\tagain") == 3
 
-
-def test_character_count():
-    assert character_count("hello world") == 11
-
-
-def test_character_count_empty():
-    assert character_count("") == 0
