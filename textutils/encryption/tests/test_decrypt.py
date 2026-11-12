@@ -1,5 +1,4 @@
-from textutils import decrypt
-from textutils import encrypt
+from textutils import decrypt, encrypt
 
 
 def test_decrypt_with_key():
