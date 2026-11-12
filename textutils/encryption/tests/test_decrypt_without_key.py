@@ -1,4 +1,4 @@
-from textutils import  decrypt_without_key
+from textutils import decrypt_without_key
 
 
 def test_decrypt_without_key():

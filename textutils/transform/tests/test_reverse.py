@@ -1,4 +1,4 @@
-from textutils import  reverse
+from textutils import reverse
 
 
 def test_reverse():
@@ -8,5 +8,3 @@ def test_reverse():
 def test_reverse_empty_and_single_character():
     assert reverse("") == ""
     assert reverse("a") == "a"
-
-
